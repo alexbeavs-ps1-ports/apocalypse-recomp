@@ -1,0 +1,31 @@
+{
+  "schema": "psx.redump-disc-set.v1",
+  "discs": [
+    {
+      "index": 1,
+      "cue_name": "Apocalypse (Europe).cue",
+      "bin_name": "Apocalypse (Europe) (Track 1).bin",
+      "size": 459223296,
+      "md5": "ba0fce10982da9313fa4cd8e211da637",
+      "sha1": "f0ee4a74b4d79d95cc52aa4651552ae1244edc84",
+      "crc32": "745fa692",
+      "track_count": 2,
+      "tracks": [
+        {
+          "name": "Apocalypse (Europe) (Track 1).bin",
+          "size": "459223296",
+          "crc": "745fa692",
+          "md5": "ba0fce10982da9313fa4cd8e211da637",
+          "sha1": "f0ee4a74b4d79d95cc52aa4651552ae1244edc84"
+        },
+        {
+          "name": "Apocalypse (Europe) (Track 2).bin",
+          "size": "32634000",
+          "crc": "9d424890",
+          "md5": "f0d4ed65fe41ebf99b2273a3914e3eb5",
+          "sha1": "f7eded280c5d5db877b324693e424690d3f740ab"
+        }
+      ]
+    }
+  ]
+}

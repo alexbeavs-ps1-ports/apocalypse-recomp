@@ -1,0 +1,44 @@
+
+[game]
+name = "Apocalypse"
+id = "SLES-00460"
+players = 1
+exe = "disc/SLES_004.60"
+disc = "disc/Apocalypse (Europe).cue"
+load_address = "0x80010000"
+entry_pc = "0x80086808"
+text_size = "0x000F9000"
+stack_base = "0x801FFFFC"
+
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Apocalypse (Europe) (Track 1).bin"
+cue_name = "Apocalypse (Europe).cue"
+boot_exe = "SLES_004.60"
+known_sizes = [459223296, 491857296]
+known_md5 = ["ba0fce10982da9313fa4cd8e211da637", "1f82bf57095b14d0ea4d636895967bf2"]
+known_sha1 = ["f0ee4a74b4d79d95cc52aa4651552ae1244edc84", "5c105ed30a58f3ec0d4c25bbea51a8bf38f6620e"]
+known_crc32 = ["745fa692", "7ec6604b"]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH5552.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+window_title = "Apocalypse Recompiled"
+memcard_dir = "saves"
+openbios = false
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+[netplay]
+require_cue = true
+required_tracks = 2
+required_disc_fp = "e05e9a3939520ba7be7f6d29dca93d6ccb71bf22bda341a3ddb56743466377f3"
